@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,12 +11,12 @@ export const Navbar = () => {
   const closeMenu = () => setIsMobileMenuOpen(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[#03001427] backdrop-blur-md shadow-lg shadow-[#2A0E61]/50 z-50">
+    <nav className="fixed top-0 left-0 w-full bg-[#03001427] backdrop-blur-md shadow-lg z-50">
       <div className="flex items-center justify-between h-[70px] px-5 md:px-10">
         {/* Logo & Name */}
-        <Link 
-          href="#about-me" 
-          className="flex items-center gap-2" 
+        <Link
+          href="#about-me"
+          className="flex items-center gap-2"
           onClick={closeMenu}
         >
           <Image
@@ -28,16 +28,17 @@ export const Navbar = () => {
             className="cursor-pointer"
           />
           <span className="hidden sm:block text-white font-bold tracking-wide">
-            I'm Anirudh</span>
+            I'm Anirudh
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8 bg-[rgba(3,0,20,0.37)] px-8 py-2 rounded-full border border-[rgba(112,66,248,0.38)] text-gray-200">
+        <div className="hidden md:flex items-center gap-8 bg-[rgba(3,0,20,0.37)] px-8 py-2 rounded-full text-gray-200 flex-wrap">
           {NAV_LINKS.map((link) => (
-            <Link 
-              key={link.title} 
-              href={link.link} 
-              className="hover:text-[rgb(112,66,248)] transition font-medium"
+            <Link
+              key={link.title}
+              href={link.link}
+              className="hover:text-[rgb(112,66,248)] transition font-medium whitespace-nowrap"
             >
               {link.title}
             </Link>
@@ -45,12 +46,12 @@ export const Navbar = () => {
         </div>
 
         {/* Social Links (Desktop) */}
-        <div className="hidden md:flex items-center gap-5">
+        <div className="hidden md:flex items-center gap-5 flex-wrap">
           {SOCIALS.map(({ link, name, icon: Icon }) => (
-            <Link 
-              key={name} 
-              href={link} 
-              target="_blank" 
+            <Link
+              key={name}
+              href={link}
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center"
             >
@@ -88,12 +89,12 @@ export const Navbar = () => {
             </button>
 
             {/* Mobile Links */}
-            <div className="flex flex-col items-center space-y-8 text-lg font-medium">
+            <div className="flex flex-col items-center space-y-6 text-lg font-medium text-center">
               {NAV_LINKS.map((link) => (
-                <Link 
-                  key={link.title} 
-                  href={link.link} 
-                  onClick={closeMenu} 
+                <Link
+                  key={link.title}
+                  href={link.link}
+                  onClick={closeMenu}
                   className="hover:text-[rgb(112,66,248)] transition"
                 >
                   {link.title}
@@ -102,12 +103,12 @@ export const Navbar = () => {
             </div>
 
             {/* Mobile Social Icons */}
-            <div className="flex space-x-6 mt-10">
+            <div className="flex flex-wrap justify-center gap-6 mt-10">
               {SOCIALS.map(({ link, name, icon: Icon }) => (
-                <Link 
-                  key={name} 
-                  href={link} 
-                  target="_blank" 
+                <Link
+                  key={name}
+                  href={link}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center"
                 >

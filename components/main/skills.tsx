@@ -15,6 +15,7 @@ export const Skills = () => {
     image: string;
     width: number;
     height: number;
+    className?: string;
   }
 
   return (
@@ -27,10 +28,10 @@ export const Skills = () => {
 
       {/* Languages */}
       <div className="flex flex-col items-center gap-4 w-full">
-        <h2 className="text-white text-xl md:text-2xl font-semibold mb-2">
+        <h2 className="text-white text-2xl md:text-2xl font-semibold mb-2">
           Languages
         </h2>
-        <div className="flex flex-wrap justify-center gap-5">
+        <div className="flex flex-wrap justify-center gap-8">
           {SKILL_DATA.map((skill: Skili, i) => (
             <SkillDataProvider
               key={skill.skill_name}
@@ -39,18 +40,18 @@ export const Skills = () => {
               width={skill.width}
               height={skill.height}
               index={i}
+              className={skill.className}
             />
           ))}
         </div>
       </div>
-      
 
       {/* Frontend Frameworks */}
       <div className="flex flex-col items-center gap-4 w-full">
-        <h2 className="text-white text-xl md:text-2xl font-semibold mb-2">
+        <h2 className="text-white text-2xl md:text-2xl font-semibold mb-2">
           Frontend Frameworks
         </h2>
-        <div className="flex flex-wrap justify-center gap-5">
+        <div className="flex flex-wrap justify-center gap-8">
           {FRONTEND_SKILL.map((skill: Skili, i) => (
             <SkillDataProvider
               key={skill.skill_name}
@@ -59,6 +60,7 @@ export const Skills = () => {
               width={skill.width}
               height={skill.height}
               index={i}
+              className={skill.className}
             />
           ))}
         </div>
@@ -66,10 +68,10 @@ export const Skills = () => {
 
       {/* Backend */}
       <div className="flex flex-col items-center gap-4 w-full">
-        <h2 className="text-white text-xl md:text-2xl font-semibold mb-2">
+        <h2 className="text-white text-2xl md:text-2xl font-semibold mb-2">
           Backend
         </h2>
-        <div className="flex flex-wrap justify-center gap-5">
+        <div className="flex flex-wrap justify-center gap-8">
           {BACKEND_SKILL.map((skill: Skili, i) => (
             <SkillDataProvider
               key={skill.skill_name}
@@ -78,6 +80,7 @@ export const Skills = () => {
               width={skill.width}
               height={skill.height}
               index={i}
+              className={skill.className}
             />
           ))}
         </div>
@@ -85,10 +88,10 @@ export const Skills = () => {
 
       {/* Fullstack */}
       <div className="flex flex-col items-center gap-4 w-full">
-        <h2 className="text-white text-xl md:text-2xl font-semibold mb-2">
+        <h2 className="text-white text-2xl md:text-2xl font-semibold mb-2">
           Fullstack
         </h2>
-        <div className="flex flex-wrap justify-center gap-5">
+        <div className="flex flex-wrap justify-center gap-10">
           {FULLSTACK_SKILL.map((skill: Skili, i) => (
             <SkillDataProvider
               key={skill.skill_name}
@@ -97,17 +100,18 @@ export const Skills = () => {
               width={skill.width}
               height={skill.height}
               index={i}
+              className={skill.className}
             />
           ))}
         </div>
       </div>
 
       {/* Tools / Others */}
-      <div className="flex flex-col items-center gap-4 w-full">
-        <h2 className="text-white text-xl md:text-2xl font-semibold mb-2">
+      <div className="flex flex-col items-center gap-5 w-full">
+        <h2 className="text-white text-2xl md:text-2xl font-semibold mb-2">
           Tools & Others
         </h2>
-        <div className="flex flex-wrap justify-center gap-5">
+        <div className="flex flex-wrap justify-center gap-8">
           {OTHER_SKILL.map((skill: Skili, i) => (
             <SkillDataProvider
               key={skill.skill_name}
@@ -116,12 +120,11 @@ export const Skills = () => {
               width={skill.width}
               height={skill.height}
               index={i}
+              className={skill.className}
             />
           ))}
         </div>
       </div>
-
-     
     </section>
   );
 };

@@ -8,74 +8,81 @@ import {
 } from "react-icons/rx";
 
 export const SKILL_DATA = [
-  { skill_name: "HTML", image: "html.png", width: 80, height: 80 },
+  { skill_name: "HTML", image: "html.png", width: 75, height: 85},
   { skill_name: "CSS", image: "css.png", width: 80, height: 80 },
-  { skill_name: "JavaScript", image: "js.png", width: 65, height: 65 },
-  { skill_name: "TypeScript", image: "ts.png", width: 80, height: 80 },
-  { skill_name: "Java", image: "java.svg", width: 90, height: 100 },
+  { skill_name: "JavaScript", image: "js.png", width: 60, height: 65, className: "mt-2 " },
+  { skill_name: "TypeScript", image: "ts.png", width: 60, height: 65, className: "mt-2 "   },
+  { skill_name: "Java", image: "java.svg", width: 90, height: 100,},
 ];
 
 export const FRONTEND_SKILL = [
   { skill_name: "React", image: "react.png", width: 80, height: 80 },
-  { skill_name: "Next.js 14", image: "next.png", width: 80, height: 80 },
-  { skill_name: "Redux", image: "redux.png", width: 70, height: 70 },
+  { skill_name: "Next.js 14", image: "next.png", width: 70, height: 70 },
+  { skill_name: "Redux", image: "redux.png", width: 70, height: 70, className: "mt-1 "  },
   { skill_name: "Tailwind CSS", image: "tailwind.png", width: 80, height: 80 },
-  { skill_name: "Framer Motion", image: "framer.png", width: 70, height: 70 },
-  { skill_name: "Material UI", image: "mui.png", width: 70, height: 70 },
-  { skill_name: "Bootstrap", image: "bootstrap.svg", width: 70, height: 70 },
+  { skill_name: "Framer", image: "framer.png", width: 65, height: 70, className: "mt-2 "  },
+  { skill_name: "Material UI", image: "mui.png", width: 70, height: 70, className: "mt-1 "  },
+  { skill_name: "Bootstrap", image: "bootstrap.svg", width: 75, height: 75, className: "mt-1 "  },
 ];
 
 export const BACKEND_SKILL = [
-  { skill_name: "Node.js", image: "node.png", width: 80, height: 80 },
-  { skill_name: "Express.js", image: "express.png", width: 80, height: 80 },
-  { skill_name: "MongoDB", image: "mongodb.png", width: 60, height: 60 },
-  { skill_name: "MySQL", image: "mysql.png", width: 60, height: 60 }, // added
-  { skill_name: "REST API", image: "api.png", width: 70, height: 70 },
-  { skill_name: "JWT", image: "jwt.png", width: 70, height: 70 },
-  { skill_name: "Mongoose", image: "mongoose.svg", width: 90, height: 100 },
+  { skill_name: "Node.js", image: "node.png", width: 70, height: 70 },
+  { skill_name: "Express.js", image: "express.png", width: 70, height: 70, className: "mt-1 "  },
+  { skill_name: "MongoDB", image: "mongodb.png", width: 42, height: 45,},
+  { skill_name: "MySQL", image: "mysql.png", width: 70, height: 70, className: "mt-2 "  }, // added
+  { skill_name: "REST API", image: "api.png", width: 70, height: 70, className: "mt-2 "  },
+  { skill_name: "JWT", image: "jwt.png", width: 100, height: 100, className: "mt-1 " },
+  { skill_name: "Mongoose", image: "mongoose.svg", width: 90, height: 100, className: "mt-1 "  },
 ];
 
 
 export const FULLSTACK_SKILL = [
   {
-    skill_name: "API Integration",
+    skill_name: "API Integ..",
     image: "local-area-network.png",
-    width: 70,
+    width: 80,
     height: 70,
   },
   {
     skill_name: "Authentication",
     image: "auth.png",
-    width: 70,
+    width: 80,
     height: 70,
   },
   {
     skill_name: "Deployment",
     image: "upload.png",
-    width: 70,
+    width: 80,
     height: 70,
   },
 ];
 
 
 export const OTHER_SKILL = [
-  { skill_name: "Git", image: "icons8-git.svg", width: 70, height: 70 },
+  { skill_name: "GIT", image: "icons8-git.svg", width: 80, height: 80 },
   { skill_name: "GitHub", image: "github-mark.svg", width: 70, height: 70 },
   { skill_name: "VS Code", image: "vscode.svg", width: 70, height: 70 },
   { skill_name: "Figma", image: "figma.png", width: 50, height: 50 },
   {
     skill_name: "Postman",
     image: "postman-logo-orange-stacked.svg",
-    width: 70,
-    height: 70,
+    width: 90,
+    height: 90,
+    className: "mt-1 ",
   },
-  { skill_name: "Docker", image: "docker.png", width: 70, height: 70 },
+  {
+    skill_name: "Docker",
+    image: "docker.png",
+    width: 90,
+    height: 90,
+    className: "mt-1 ",
+  },
   {
     skill_name: "Razor Pay",
     image: "razorpay.svg",
     width: 120,
-    height: 100,
-    
+    height: 120,
+    className: "mt-3",
   },
 ];
 
@@ -131,7 +138,10 @@ export const FOOTER_DATA = [
 ];
 
 export const NAV_LINKS = [
-  { title: "About me", link: "#about-me" },
+  { title: "About Me", link: "#about-me" },
   { title: "Skills", link: "#skills" },
+  { title: "Experience", link: "#experience" },
   { title: "Projects", link: "#projects" },
+  { title: "Contact", link: "#contact" },
 ];
+
